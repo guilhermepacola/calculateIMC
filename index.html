@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!--PRECONNECT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!--SCRIPTS-->
+    <script src="./src/js/main.js" type="module" defer></script>
+</head>
+
+<body>
+
+    <div class="alertError">
+        <p>Digite apenas Números</p>
+    </div>
+    <div class="container">
+        <main class="card">
+            <div class="principalContent">
+
+                <form>
+                    <h1 class="title">Cálculo de IMC</h1>
+
+                    <div class="input--wrapper">
+                        <label for="weight">Peso (kg)</label>
+                        <input id="weight" type="text" autocomplete="off" placeholder="60" />
+                    </div>
+
+                    <div class="input--wrapper">
+                        <label for="height">Altura (cm)</label>
+                        <input id="height" type="text" autocomplete="off" placeholder="165" />
+                    </div>
+
+                    <button type="submit">Calcular IMC
+                        <img src="./src/images/arrow.svg" alt=" botão em forma de seta">
+                    </button>
+                </form>
+
+                <div class="modal--wrapper">
+                    <div class="modal card">
+                        <h2 class="title">
+                            <button id="close"><img src="./src/images/btncClose.svg" alt="botão de fechar o popup"></button>
+                            <span></span>
+                        </h2>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
